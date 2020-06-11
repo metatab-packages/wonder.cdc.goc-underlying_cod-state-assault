@@ -1,0 +1,32 @@
+Declare,metatab-latest
+Title,"Underlying Cause of Death, Assault, 1999 to 2018, By State"
+Description,"Counts and rates for assaults as a cause of death, from a CDC Wonder search. "
+Identifier,ab36aca4-0da2-40e6-a825-e09ed6761fcc
+Name,wonder.cdc.goc-underlying_cod-state-assault-1.1.1
+Dataset,underlying_cod
+Origin,wonder.cdc.goc
+Time,
+Space,state
+Grain,
+Variant,assault
+Version,1.1.1
+Version.Major,1
+Version.Minor,1
+Version.Patch,1
+Created,2020-06-11T15:37:59
+Modified,2020-06-11T15:38:01
+Giturl,https://github.com/metatab-packages/policedata-collection.git
+
+Section,Contacts,Email,Organization,Url
+Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
+
+Section,Documentation,Title,Description,
+Documentation,file:README.md,README,,
+Documentation,https://wonder.cdc.gov/wonder/help/ucd.html#,Underlying Cause of Death 1999-2018,Dataset documentation
+
+Section,References,Name,Description,
+
+Section,Resources,Name,Description,
+Datafile,data/assault.tsv,assaults,"Counts and rates of Assault as a cause of death, from CDC Wonder. "
+
+Section,Schema,DataType,AltName,Description
