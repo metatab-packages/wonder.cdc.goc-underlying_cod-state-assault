@@ -1,5 +1,7 @@
 # Underlying Cause of Death, Assault, 1999 to 2018, By State
 
+This dataset is an extract from CDC Wonder, with rates and counts of deaths due to assault, by state. 
+
 
 # Notes from the Dataset
 
