@@ -1,32 +1,48 @@
 Declare,metatab-latest
 Title,"Underlying Cause of Death, Assault, 1999 to 2018, By State"
-Description,"Counts and rates for assaults as a cause of death, from a CDC Wonder search. "
+Description,"Counts and rates for assaults as a cause of death, from a CDC Wonder search."
 Identifier,ab36aca4-0da2-40e6-a825-e09ed6761fcc
-Name,wonder.cdc.goc-underlying_cod-state-assault-1.1.1
+Name,wonder.cdc.goc-underlying_cod-state-assault-1.1.2
 Dataset,underlying_cod
 Origin,wonder.cdc.goc
 Time,
 Space,state
 Grain,
 Variant,assault
-Version,1.1.1
+Version,1.1.2
 Version.Major,1
 Version.Minor,1
-Version.Patch,1
+Version.Patch,2
 Created,2020-06-11T15:37:59
-Modified,2020-06-11T15:38:01
+Modified,2020-06-16T22:36:59
 Giturl,https://github.com/metatab-packages/policedata-collection.git
-
+""
 Section,Contacts,Email,Organization,Url
 Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
-
+""
 Section,Documentation,Title,Description,
 Documentation,file:README.md,README,,
-Documentation,https://wonder.cdc.gov/wonder/help/ucd.html#,Underlying Cause of Death 1999-2018,Dataset documentation
-
+Documentation,https://wonder.cdc.gov/wonder/help/ucd.html#,Underlying Cause of Death 1999-2018,Dataset documentation,
+""
 Section,References,Name,Description,
-
+""
 Section,Resources,Name,Description,
-Datafile,data/assault.tsv,assaults,"Counts and rates of Assault as a cause of death, from CDC Wonder. "
-
-Section,Schema,DataType,AltName,Description
+Datafile,data/assault.tsv,assaults,"Counts and rates of Assault as a cause of death, from CDC Wonder.",
+""
+Section,Schema,DataType,AltName,Description,Has_Codes
+Table,assaults,,,,
+Table.Column,Notes,unknown,notes,,
+Table.Column,State,string,state,,
+Table.Column,State Code,integer,state_code,,
+Table.Column,Year,integer,year,,
+Table.Column,Year Code,integer,year_code,,
+Table.Column,Race,string,race,,
+Table.Column,Race Code,string,race_code,,
+Table.Column,Deaths,integer,deaths,,
+Table.Column,Population,integer,population,,
+Table.Column,Crude Rate,string,crude_rate,,
+Table.Column,Crude Rate Lower 95% Confidence Interval,number,crude_rate_lower_95_confidence_interval,,
+Table.Column,Crude Rate Upper 95% Confidence Interval,number,crude_rate_upper_95_confidence_interval,,
+Table.Column,Crude Rate Standard Error,number,crude_rate_standard_error,,
+Table.Column,Age Adjusted Rate,string,age_adjusted_rate,,
+Table.Column,% of Total Deaths,string,_of_total_deaths,,
